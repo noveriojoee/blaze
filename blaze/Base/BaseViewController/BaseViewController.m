@@ -1,0 +1,110 @@
+//
+//  BaseViewController.m
+//  blaze
+//
+//  Created by Noverio Joe on 29/11/18.
+//  Copyright © 2018 vysokomp. All rights reserved.
+//
+
+#import "BaseViewController.h"
+
+@interface BaseViewController ()
+
+@property (nonatomic, copy) void (^singleTapRecognizer)(UITapGestureRecognizer*);
+
+@end
+
+@implementation BaseViewController
+
+- (void)navBack:(id)sender{
+    UINavigationController* controller = self.navigationController;
+    if (controller != NULL && [controller.viewControllers firstObject] != self ){
+        [controller popViewControllerAnimated:YES];
+    }else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self registerDoneButtonToAllTextField];
+}
+
+- (void)registerDoneButtonToAllTextField{
+    
+    for (id item in [self.view subviews]){
+        if([item isKindOfClass:[UITextField class]]){
+            [self registerToolbarToTextField:item];
+        }else if([item isKindOfClass:[UITextView class]]){
+            [self registerToolbarToTextView:item];
+        }
+    }
+    
+}
+
+- (void)endEditingKeyboard:(UIPanGestureRecognizer *)recognizer{
+    [self.view endEditing:YES];
+}
+
+- (void)registerSingleTapActionToView:(UIView*)view recognizer : (void(^)(UIGestureRecognizer*)) callback{
+    self.singleTapRecognizer = callback;
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(localSingleTapRecognizer:)];
+    singleTap.numberOfTapsRequired = 1;
+    [view addGestureRecognizer:singleTap];
+}
+
+- (void)registerToolbarToTextField : (UITextField*) textField{
+    UIToolbar* keyboardToolbar = [[UIToolbar alloc] init];
+    [keyboardToolbar sizeToFit];
+    UIBarButtonItem *doneBarButton = [[UIBarButtonItem alloc]
+                                      initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                      target:self action:@selector(endEditingKeyboard:)];
+    UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    
+    keyboardToolbar.items = @[space,doneBarButton];
+    textField.inputAccessoryView = keyboardToolbar;
+}
+
+- (void)registerToolbarToTextView : (UITextView*) textView{
+    UIToolbar* keyboardToolbar = [[UIToolbar alloc] init];
+    [keyboardToolbar sizeToFit];
+    UIBarButtonItem *doneBarButton = [[UIBarButtonItem alloc]
+                                      initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                      target:self action:@selector(endEditingKeyboard:)];
+    UIBarButtonItem *space=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    
+    keyboardToolbar.items = @[space,doneBarButton];
+    textView.inputAccessoryView = keyboardToolbar;
+}
+
+-(void)localSingleTapRecognizer : (UITapGestureRecognizer*)gesture{
+    self.singleTapRecognizer(gesture);
+}
+
+- (void)setViewControllerBackgroundWithImageName : (NSString*) imgName targetedView : (UIView*) targetView{
+    //Repeating Image Method BEGIN
+//    UIGraphicsBeginImageContext(targetView.frame.size);
+//    UIImage *targetImage = [UIImage imageNamed:imgName];
+//    [targetImage drawInRect:targetView.bounds];
+//
+//    if (UIGraphicsGetImageFromCurrentImageContext() != NULL){
+//        UIGraphicsEndImageContext();
+//        targetView.backgroundColor = [UIColor colorWithPatternImage:targetImage];
+//    }else{
+//        UIGraphicsEndImageContext();
+//    }
+    //Repeating Image Method END
+    
+    UIGraphicsBeginImageContext(targetView.frame.size);
+    UIImage* targetImage = [UIImage imageNamed:imgName];
+    [targetImage drawInRect:targetView.bounds];
+    //noverio new method : Strecth image untuk berbagai ukuran layar
+    targetView.layer.contents = (__bridge id _Nullable)([targetImage CGImage]);
+    //noverio new method end
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+@end

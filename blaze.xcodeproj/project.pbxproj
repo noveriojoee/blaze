@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06215219517565F1E128E263 /* libPods-blaze.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1569CB429BFADB9807CCC2AB /* libPods-blaze.a */; };
+		35CA484CFD9D76AF94E1C214 /* Pods_blaze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8ABF0690C08A755E7A4A0F /* Pods_blaze.framework */; };
+		DE2F679D22A107B100CD4787 /* InitializationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F679C22A107B100CD4787 /* InitializationViewController.m */; };
+		DE2F67CA22A16CAB00CD4787 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F67C922A16CAB00CD4787 /* BaseViewController.m */; };
+		DE2F67CD22A16FF600CD4787 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F67CC22A16FF600CD4787 /* LoginViewController.m */; };
+		DE2F67D322A1A3DB00CD4787 /* RegisterStepOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F67D222A1A3DB00CD4787 /* RegisterStepOneViewController.m */; };
+		DE2F67D722A1A88600CD4787 /* RegistrationStepTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F67D622A1A88600CD4787 /* RegistrationStepTwoViewController.m */; };
+		DE2F67DA22A1A89700CD4787 /* RegistrationStepThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F67D922A1A89700CD4787 /* RegistrationStepThreeViewController.m */; };
+		DE2F67DD22A1ADD500CD4787 /* PhoneNumberRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F67DC22A1ADD500CD4787 /* PhoneNumberRegistrationViewController.m */; };
 		DE7E15BC229C297900100B81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7E15BB229C297900100B81 /* AppDelegate.m */; };
 		DE7E15BF229C297900100B81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7E15BE229C297900100B81 /* ViewController.m */; };
 		DE7E15C2229C297900100B81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7E15C0229C297900100B81 /* Main.storyboard */; };
@@ -17,9 +24,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1569CB429BFADB9807CCC2AB /* libPods-blaze.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-blaze.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F23D83417071FE5B2BCDE7A /* Pods-blaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blaze.release.xcconfig"; path = "Pods/Target Support Files/Pods-blaze/Pods-blaze.release.xcconfig"; sourceTree = "<group>"; };
 		5F7B30BF2B27FF628F0D9D5F /* Pods-blaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blaze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-blaze/Pods-blaze.debug.xcconfig"; sourceTree = "<group>"; };
+		BD8ABF0690C08A755E7A4A0F /* Pods_blaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE2F679B22A107B100CD4787 /* InitializationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitializationViewController.h; sourceTree = "<group>"; };
+		DE2F679C22A107B100CD4787 /* InitializationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitializationViewController.m; sourceTree = "<group>"; };
+		DE2F67C822A16CAB00CD4787 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		DE2F67C922A16CAB00CD4787 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		DE2F67CB22A16FF600CD4787 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DE2F67CC22A16FF600CD4787 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		DE2F67D122A1A3DB00CD4787 /* RegisterStepOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterStepOneViewController.h; sourceTree = "<group>"; };
+		DE2F67D222A1A3DB00CD4787 /* RegisterStepOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterStepOneViewController.m; sourceTree = "<group>"; };
+		DE2F67D522A1A88600CD4787 /* RegistrationStepTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrationStepTwoViewController.h; sourceTree = "<group>"; };
+		DE2F67D622A1A88600CD4787 /* RegistrationStepTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistrationStepTwoViewController.m; sourceTree = "<group>"; };
+		DE2F67D822A1A89700CD4787 /* RegistrationStepThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrationStepThreeViewController.h; sourceTree = "<group>"; };
+		DE2F67D922A1A89700CD4787 /* RegistrationStepThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistrationStepThreeViewController.m; sourceTree = "<group>"; };
+		DE2F67DB22A1ADD500CD4787 /* PhoneNumberRegistrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneNumberRegistrationViewController.h; sourceTree = "<group>"; };
+		DE2F67DC22A1ADD500CD4787 /* PhoneNumberRegistrationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberRegistrationViewController.m; sourceTree = "<group>"; };
 		DE7E15B7229C297900100B81 /* blaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7E15BA229C297900100B81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE7E15BB229C297900100B81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06215219517565F1E128E263 /* libPods-blaze.a in Frameworks */,
+				35CA484CFD9D76AF94E1C214 /* Pods_blaze.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +68,7 @@
 		7E6FFCE003EAF9A18A848AA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1569CB429BFADB9807CCC2AB /* libPods-blaze.a */,
+				BD8ABF0690C08A755E7A4A0F /* Pods_blaze.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -59,6 +80,87 @@
 				5F23D83417071FE5B2BCDE7A /* Pods-blaze.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE2F679822A1077D00CD4787 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE2F67D422A1A3E000CD4787 /* Registration */,
+				DE2F679B22A107B100CD4787 /* InitializationViewController.h */,
+				DE2F679C22A107B100CD4787 /* InitializationViewController.m */,
+				DE2F67CB22A16FF600CD4787 /* LoginViewController.h */,
+				DE2F67CC22A16FF600CD4787 /* LoginViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE2F679922A1078400CD4787 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE2F679A22A1078A00CD4787 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE2F67C622A16C9200CD4787 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DE2F67C722A16C9A00CD4787 /* BaseViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DE2F67C722A16C9A00CD4787 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE2F67C822A16CAB00CD4787 /* BaseViewController.h */,
+				DE2F67C922A16CAB00CD4787 /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		DE2F67CE22A1741E00CD4787 /* UICustom */ = {
+			isa = PBXGroup;
+			children = (
+				DE2F67D022A1752200CD4787 /* UIButton */,
+				DE2F67CF22A1742A00CD4787 /* UITextBox */,
+			);
+			path = UICustom;
+			sourceTree = "<group>";
+		};
+		DE2F67CF22A1742A00CD4787 /* UITextBox */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITextBox;
+			sourceTree = "<group>";
+		};
+		DE2F67D022A1752200CD4787 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		DE2F67D422A1A3E000CD4787 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				DE2F67D122A1A3DB00CD4787 /* RegisterStepOneViewController.h */,
+				DE2F67D222A1A3DB00CD4787 /* RegisterStepOneViewController.m */,
+				DE2F67D522A1A88600CD4787 /* RegistrationStepTwoViewController.h */,
+				DE2F67D622A1A88600CD4787 /* RegistrationStepTwoViewController.m */,
+				DE2F67D822A1A89700CD4787 /* RegistrationStepThreeViewController.h */,
+				DE2F67D922A1A89700CD4787 /* RegistrationStepThreeViewController.m */,
+				DE2F67DB22A1ADD500CD4787 /* PhoneNumberRegistrationViewController.h */,
+				DE2F67DC22A1ADD500CD4787 /* PhoneNumberRegistrationViewController.m */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		DE7E15AE229C297900100B81 = {
@@ -82,6 +184,11 @@
 		DE7E15B9229C297900100B81 /* blaze */ = {
 			isa = PBXGroup;
 			children = (
+				DE2F67CE22A1741E00CD4787 /* UICustom */,
+				DE2F67C622A16C9200CD4787 /* Base */,
+				DE2F679A22A1078A00CD4787 /* Model */,
+				DE2F679922A1078400CD4787 /* ViewModel */,
+				DE2F679822A1077D00CD4787 /* View */,
 				DE7E15BA229C297900100B81 /* AppDelegate.h */,
 				DE7E15BB229C297900100B81 /* AppDelegate.m */,
 				DE7E15BD229C297900100B81 /* ViewController.h */,
@@ -106,6 +213,7 @@
 				DE7E15B3229C297900100B81 /* Sources */,
 				DE7E15B4229C297900100B81 /* Frameworks */,
 				DE7E15B5229C297900100B81 /* Resources */,
+				5A5BDFFB918983315975B77D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +292,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5A5BDFFB918983315975B77D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-blaze/Pods-blaze-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-blaze/Pods-blaze-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,8 +323,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2F679D22A107B100CD4787 /* InitializationViewController.m in Sources */,
+				DE2F67DD22A1ADD500CD4787 /* PhoneNumberRegistrationViewController.m in Sources */,
+				DE2F67CA22A16CAB00CD4787 /* BaseViewController.m in Sources */,
+				DE2F67DA22A1A89700CD4787 /* RegistrationStepThreeViewController.m in Sources */,
+				DE2F67CD22A16FF600CD4787 /* LoginViewController.m in Sources */,
 				DE7E15BF229C297900100B81 /* ViewController.m in Sources */,
+				DE2F67D322A1A3DB00CD4787 /* RegisterStepOneViewController.m in Sources */,
 				DE7E15CA229C297B00100B81 /* main.m in Sources */,
+				DE2F67D722A1A88600CD4787 /* RegistrationStepTwoViewController.m in Sources */,
 				DE7E15BC229C297900100B81 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
