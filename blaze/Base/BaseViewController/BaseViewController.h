@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "blazeUITextField.h"
+#import "UtilitiesColouring.h"
+#import "BlazeDropDownTextField.h"
 
 @interface BaseViewController : UIViewController
 

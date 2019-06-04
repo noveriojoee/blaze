@@ -31,7 +31,6 @@
 }
 
 - (void)registerDoneButtonToAllTextField{
-    
     for (id item in [self.view subviews]){
         if([item isKindOfClass:[UITextField class]]){
             [self registerToolbarToTextField:item];
@@ -39,7 +38,6 @@
             [self registerToolbarToTextView:item];
         }
     }
-    
 }
 
 - (void)endEditingKeyboard:(UIPanGestureRecognizer *)recognizer{

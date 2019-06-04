@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setViewControllerBackgroundWithImageName:@"bg_splashscreen" targetedView:self.view];
+    [self setViewControllerBackgroundWithImageName:@"bg_login" targetedView:self.view];
 }
 
 - (IBAction)btnBack:(id)sender {

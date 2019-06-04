@@ -9,7 +9,9 @@
 #import "InitializationViewController.h"
 
 @interface InitializationViewController ()
+
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
 @end
 
 @implementation InitializationViewController

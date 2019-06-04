@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		35CA484CFD9D76AF94E1C214 /* Pods_blaze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8ABF0690C08A755E7A4A0F /* Pods_blaze.framework */; };
+		DE18CC6A22A3A86D00E03FFB /* UtilitiesColouring.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18CC6922A3A86D00E03FFB /* UtilitiesColouring.m */; };
+		DE18CC7322A3CE0000E03FFB /* BlazeBlackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18CC7222A3CE0000E03FFB /* BlazeBlackButton.m */; };
+		DE18CC7622A3CE1C00E03FFB /* BlazeClearButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18CC7522A3CE1C00E03FFB /* BlazeClearButton.m */; };
+		DE18CC7922A3CE5900E03FFB /* BlazeUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18CC7822A3CE5900E03FFB /* BlazeUITextField.m */; };
+		DE18CC7C22A3CF2200E03FFB /* BlazeYellowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18CC7B22A3CF2200E03FFB /* BlazeYellowButton.m */; };
+		DE18CC7F22A3D0BA00E03FFB /* BlazeWhiteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18CC7E22A3D0BA00E03FFB /* BlazeWhiteButton.m */; };
+		DE18CC8222A3D27C00E03FFB /* BlazeToogleButtonTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18CC8122A3D27C00E03FFB /* BlazeToogleButtonTemplate.m */; };
+		DE18CC8522A6228800E03FFB /* BlazeDropDownTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18CC8422A6228800E03FFB /* BlazeDropDownTextField.m */; };
 		DE2F679D22A107B100CD4787 /* InitializationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F679C22A107B100CD4787 /* InitializationViewController.m */; };
 		DE2F67CA22A16CAB00CD4787 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F67C922A16CAB00CD4787 /* BaseViewController.m */; };
 		DE2F67CD22A16FF600CD4787 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F67CC22A16FF600CD4787 /* LoginViewController.m */; };
@@ -27,6 +35,22 @@
 		5F23D83417071FE5B2BCDE7A /* Pods-blaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blaze.release.xcconfig"; path = "Pods/Target Support Files/Pods-blaze/Pods-blaze.release.xcconfig"; sourceTree = "<group>"; };
 		5F7B30BF2B27FF628F0D9D5F /* Pods-blaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blaze.debug.xcconfig"; path = "Pods/Target Support Files/Pods-blaze/Pods-blaze.debug.xcconfig"; sourceTree = "<group>"; };
 		BD8ABF0690C08A755E7A4A0F /* Pods_blaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE18CC6822A3A86D00E03FFB /* UtilitiesColouring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilitiesColouring.h; sourceTree = "<group>"; };
+		DE18CC6922A3A86D00E03FFB /* UtilitiesColouring.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilitiesColouring.m; sourceTree = "<group>"; };
+		DE18CC7122A3CE0000E03FFB /* BlazeBlackButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlazeBlackButton.h; sourceTree = "<group>"; };
+		DE18CC7222A3CE0000E03FFB /* BlazeBlackButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlazeBlackButton.m; sourceTree = "<group>"; };
+		DE18CC7422A3CE1C00E03FFB /* BlazeClearButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlazeClearButton.h; sourceTree = "<group>"; };
+		DE18CC7522A3CE1C00E03FFB /* BlazeClearButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlazeClearButton.m; sourceTree = "<group>"; };
+		DE18CC7722A3CE5900E03FFB /* BlazeUITextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlazeUITextField.h; sourceTree = "<group>"; };
+		DE18CC7822A3CE5900E03FFB /* BlazeUITextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlazeUITextField.m; sourceTree = "<group>"; };
+		DE18CC7A22A3CF2200E03FFB /* BlazeYellowButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlazeYellowButton.h; sourceTree = "<group>"; };
+		DE18CC7B22A3CF2200E03FFB /* BlazeYellowButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlazeYellowButton.m; sourceTree = "<group>"; };
+		DE18CC7D22A3D0BA00E03FFB /* BlazeWhiteButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlazeWhiteButton.h; sourceTree = "<group>"; };
+		DE18CC7E22A3D0BA00E03FFB /* BlazeWhiteButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlazeWhiteButton.m; sourceTree = "<group>"; };
+		DE18CC8022A3D27C00E03FFB /* BlazeToogleButtonTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlazeToogleButtonTemplate.h; sourceTree = "<group>"; };
+		DE18CC8122A3D27C00E03FFB /* BlazeToogleButtonTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlazeToogleButtonTemplate.m; sourceTree = "<group>"; };
+		DE18CC8322A6228800E03FFB /* BlazeDropDownTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlazeDropDownTextField.h; sourceTree = "<group>"; };
+		DE18CC8422A6228800E03FFB /* BlazeDropDownTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlazeDropDownTextField.m; sourceTree = "<group>"; };
 		DE2F679B22A107B100CD4787 /* InitializationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitializationViewController.h; sourceTree = "<group>"; };
 		DE2F679C22A107B100CD4787 /* InitializationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitializationViewController.m; sourceTree = "<group>"; };
 		DE2F67C822A16CAB00CD4787 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -112,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				DE2F67C722A16C9A00CD4787 /* BaseViewController */,
+				DE18CC6822A3A86D00E03FFB /* UtilitiesColouring.h */,
+				DE18CC6922A3A86D00E03FFB /* UtilitiesColouring.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -137,6 +163,10 @@
 		DE2F67CF22A1742A00CD4787 /* UITextBox */ = {
 			isa = PBXGroup;
 			children = (
+				DE18CC7722A3CE5900E03FFB /* BlazeUITextField.h */,
+				DE18CC7822A3CE5900E03FFB /* BlazeUITextField.m */,
+				DE18CC8322A6228800E03FFB /* BlazeDropDownTextField.h */,
+				DE18CC8422A6228800E03FFB /* BlazeDropDownTextField.m */,
 			);
 			path = UITextBox;
 			sourceTree = "<group>";
@@ -144,6 +174,16 @@
 		DE2F67D022A1752200CD4787 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				DE18CC7122A3CE0000E03FFB /* BlazeBlackButton.h */,
+				DE18CC7222A3CE0000E03FFB /* BlazeBlackButton.m */,
+				DE18CC7422A3CE1C00E03FFB /* BlazeClearButton.h */,
+				DE18CC7522A3CE1C00E03FFB /* BlazeClearButton.m */,
+				DE18CC7A22A3CF2200E03FFB /* BlazeYellowButton.h */,
+				DE18CC7B22A3CF2200E03FFB /* BlazeYellowButton.m */,
+				DE18CC7D22A3D0BA00E03FFB /* BlazeWhiteButton.h */,
+				DE18CC7E22A3D0BA00E03FFB /* BlazeWhiteButton.m */,
+				DE18CC8022A3D27C00E03FFB /* BlazeToogleButtonTemplate.h */,
+				DE18CC8122A3D27C00E03FFB /* BlazeToogleButtonTemplate.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -302,6 +342,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-blaze/Pods-blaze-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -309,6 +350,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,13 +365,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE18CC7C22A3CF2200E03FFB /* BlazeYellowButton.m in Sources */,
 				DE2F679D22A107B100CD4787 /* InitializationViewController.m in Sources */,
+				DE18CC6A22A3A86D00E03FFB /* UtilitiesColouring.m in Sources */,
 				DE2F67DD22A1ADD500CD4787 /* PhoneNumberRegistrationViewController.m in Sources */,
 				DE2F67CA22A16CAB00CD4787 /* BaseViewController.m in Sources */,
+				DE18CC8522A6228800E03FFB /* BlazeDropDownTextField.m in Sources */,
+				DE18CC7622A3CE1C00E03FFB /* BlazeClearButton.m in Sources */,
+				DE18CC8222A3D27C00E03FFB /* BlazeToogleButtonTemplate.m in Sources */,
 				DE2F67DA22A1A89700CD4787 /* RegistrationStepThreeViewController.m in Sources */,
+				DE18CC7322A3CE0000E03FFB /* BlazeBlackButton.m in Sources */,
+				DE18CC7F22A3D0BA00E03FFB /* BlazeWhiteButton.m in Sources */,
 				DE2F67CD22A16FF600CD4787 /* LoginViewController.m in Sources */,
 				DE7E15BF229C297900100B81 /* ViewController.m in Sources */,
 				DE2F67D322A1A3DB00CD4787 /* RegisterStepOneViewController.m in Sources */,
+				DE18CC7922A3CE5900E03FFB /* BlazeUITextField.m in Sources */,
 				DE7E15CA229C297B00100B81 /* main.m in Sources */,
 				DE2F67D722A1A88600CD4787 /* RegistrationStepTwoViewController.m in Sources */,
 				DE7E15BC229C297900100B81 /* AppDelegate.m in Sources */,
