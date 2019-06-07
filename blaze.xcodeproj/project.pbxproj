@@ -29,6 +29,7 @@
 		DE7E15C4229C297B00100B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7E15C3229C297B00100B81 /* Assets.xcassets */; };
 		DE7E15C7229C297B00100B81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7E15C5229C297B00100B81 /* LaunchScreen.storyboard */; };
 		DE7E15CA229C297B00100B81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7E15C9229C297B00100B81 /* main.m */; };
+		DE84BDEF22AA0F63003860EA /* BlazePhoneNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DE84BDEE22AA0F63003860EA /* BlazePhoneNumberTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,8 @@
 		DE7E15C6229C297B00100B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE7E15C8229C297B00100B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE7E15C9229C297B00100B81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE84BDED22AA0F63003860EA /* BlazePhoneNumberTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlazePhoneNumberTextField.h; sourceTree = "<group>"; };
+		DE84BDEE22AA0F63003860EA /* BlazePhoneNumberTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlazePhoneNumberTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				DE18CC7822A3CE5900E03FFB /* BlazeUITextField.m */,
 				DE18CC8322A6228800E03FFB /* BlazeDropDownTextField.h */,
 				DE18CC8422A6228800E03FFB /* BlazeDropDownTextField.m */,
+				DE84BDED22AA0F63003860EA /* BlazePhoneNumberTextField.h */,
+				DE84BDEE22AA0F63003860EA /* BlazePhoneNumberTextField.m */,
 			);
 			path = UITextBox;
 			sourceTree = "<group>";
@@ -383,6 +388,7 @@
 				DE7E15CA229C297B00100B81 /* main.m in Sources */,
 				DE2F67D722A1A88600CD4787 /* RegistrationStepTwoViewController.m in Sources */,
 				DE7E15BC229C297900100B81 /* AppDelegate.m in Sources */,
+				DE84BDEF22AA0F63003860EA /* BlazePhoneNumberTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

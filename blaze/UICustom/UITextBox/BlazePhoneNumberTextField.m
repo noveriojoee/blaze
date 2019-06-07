@@ -1,34 +1,37 @@
 //
-//  BlazeDropDownTextField.m
+//  BlazePhoneNumberTextField.m
 //  blaze
 //
-//  Created by Noverio Joe on 04/06/19.
+//  Created by Noverio Joe on 07/06/19.
 //  Copyright © 2019 gid. All rights reserved.
 //
 
-#import "BlazeDropDownTextField.h"
+#import "BlazePhoneNumberTextField.h"
 #import "UtilitiesColouring.h"
 #import "ActionSheetStringPicker.h"
 
-@interface BlazeDropDownTextField()<UITextFieldDelegate>
+
+@interface BlazePhoneNumberTextField()<UITextFieldDelegate>
+
 @property UIView* parentView;
 @property NSArray* contents;
 @property NSString* pickerTitle;
 @property NSInteger selectedIndex;
 @property UIButton* dropdownButton;
 @property (nonatomic, copy) void (^onFormValueChanged)(NSString*);
+
 @end
 
-@implementation BlazeDropDownTextField
+@implementation BlazePhoneNumberTextField
 
 -(void)drawDropDownButton{
     self.dropdownButton = [UIButton buttonWithType:UIButtonTypeCustom];
     dispatch_async(dispatch_get_main_queue(), ^(void){
         [self.dropdownButton addTarget:self action:@selector(ddlBtnPressed:) forControlEvents:UIControlEventTouchUpInside];
-        self.dropdownButton.frame = CGRectMake(self.bounds.size.width - 50, 0, 50, self.frame.size.height);
+        self.dropdownButton.frame = CGRectMake(0, 0, 50, self.frame.size.height);
         self.dropdownButton.clipsToBounds = YES;
         [self.dropdownButton setTintColor:UIColor.blackColor];
-        [self.dropdownButton setBackgroundColor:UIColor.whiteColor];
+        [self.dropdownButton setBackgroundColor:UIColor.grayColor];
         [self.dropdownButton setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
         [self addSubview:self.dropdownButton];
     });
@@ -43,15 +46,12 @@
 
 -(IBAction)ddlBtnPressed:(id)sender{
     [ActionSheetStringPicker showPickerWithTitle:self.pickerTitle rows:self.contents initialSelection:self.selectedIndex doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
-        self.selectedIndex = selectedIndex;
-        [self setTextValue : selectedValue index:selectedIndex];
+        [self.dropdownButton setTitle:selectedValue forState:UIControlStateNormal];
     } cancelBlock:^(ActionSheetStringPicker *picker) {
         NSLog(@"do nothing");
     } origin:self];
 }
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     self.selectedIndex = 0;
     self.delegate = self;
@@ -115,8 +115,5 @@
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     return NO;
 }
-
-
-
 
 @end

@@ -9,14 +9,29 @@
 #import "PhoneNumberRegistrationViewController.h"
 
 @interface PhoneNumberRegistrationViewController ()
-
+@property (weak, nonatomic) IBOutlet BlazePhoneNumberTextField *tfPhoneNumber;
 @end
 
 @implementation PhoneNumberRegistrationViewController
 
+- (void)setTfPhoneNumber:(BlazePhoneNumberTextField *)tfPhoneNumber{
+    [tfPhoneNumber bind:^(NSString *value) {
+        NSLog(value);
+    }];
+    _tfPhoneNumber = tfPhoneNumber;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.tfPhoneNumber initDDL:@"PHONENUMBER_DDL" initialContent:@[@"+62",@"+65"] pickerTitle:@"Kode Negara" withDefaultValue:NO buttonText:@"+62" parentView:self.view];
+}
+
+- (IBAction)btnBack:(id)sender {
+    [self navBack:sender];
 }
 
 /*

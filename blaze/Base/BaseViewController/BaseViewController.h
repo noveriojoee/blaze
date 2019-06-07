@@ -10,6 +10,7 @@
 #import "blazeUITextField.h"
 #import "UtilitiesColouring.h"
 #import "BlazeDropDownTextField.h"
+#import "BlazePhoneNumberTextField.h"
 
 @interface BaseViewController : UIViewController
 
